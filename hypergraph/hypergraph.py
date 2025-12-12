@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 from hypergraph.node import Node
 from hypergraph.edge import Edge
 
@@ -97,7 +98,6 @@ class HyperGraph:
         plt.grid(True, alpha=0.3)
 
         # Add legend
-        from matplotlib.patches import Patch
         legend_elements = [
             Patch(facecolor='black', edgecolor='black', label='Hyperedge (R=0)'),
             Patch(facecolor='red', edgecolor='red', label='Hyperedge (R=1)'),
